@@ -1,13 +1,8 @@
 = ClassRepo
 
-ifdef::env-github,env-browser[]
-:relfileprefix: docs/
-:imagesDir: docs/images
-endif::[]
+ifdef::env-github,env-browser[:relfileprefix: docs/]
+ifdef::env-github,env-browser[:imagesDir: docs/images]
 
-ifndef::env-github,env-browser[]
-:imagesDir: images
-endif::[]
 
 https://travis-ci.org/CS2113-AY1819S1-F10-1/main[image:https://travis-ci.org/CS2113-AY1819S1-F10-1/main.svg?branch=master[Build Status]]
 image:https://api.codacy.com/project/badge/Grade/e1ed6200448148c6a6c8d955ee177c64["Codacy code quality", link="https://www.codacy.com/app/0WN463/main?utm_source=github.com&utm_medium=referral&utm_content=CS2113-AY1819S1-F10-1/main&utm_campaign=Badge_Grade"]https://coveralls.io/github/CS2113-AY1819S1-F10-1/main?branch=master[image:https://coveralls.io/repos/github/CS2113-AY1819S1-F10-1/main/badge.svg[Build Status]]
