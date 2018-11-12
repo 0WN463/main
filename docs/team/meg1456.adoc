@@ -5,19 +5,26 @@
 
 == ClassRepo
 
-== *What Is It?*
-ClassRepo is an enhanced AddressBook application, which is targeted at Secondary Schools to provide them with an easy
-and effective learning management system. The users can interact with it using a CLI. The application also has a GUI
-created with JavaFX. It is written in Java, and has about 10 kLoC.
+== Introduction
+This portfolio highlights my contributions to a team software development project. After almost 12 weeks of advancements,
+we have created ClassRepo, which is an all-in-one school management system.
+
+== *More About ClassRepo*
+ClassRepo is an enhanced AddressBook application, which is targeted at secondary schools to provide them with an easy
+and effective learning management system. Our aim is to help the students, teachers and the admin personnel in
+secondary schools by bolstering their efficiency. Spending less time on mundane tasks such as attendance taking would
+mean an increase in time available for actual learning to take place. With this goal in mind, our app targets 5 key areas,
+namely privilege (to ensure data security), exams, assessments & grades, fees and attendance. The users can interact with
+our app using a CLI. The application also has a GUI created with JavaFX. It is written in Java, and has about 10 kLoC.
 
 == *How Did I Contribute?*
 
 * Code Contributed - https://nuscs2113-ay1819s1.github.io/dashboard/#=undefined&search=meg1456&sort=displayName&since=2018-09-12&until=2018-11-05&timeframe=day&reverse=false&repoSort=true[RepoSense]
 
-1. *Major Enhancements*: Added the *Grades Feature*
-   * Able to add/list/delete assessments
-   * Able to add/view/delete grades for students individually, for specific assessments
-   * Able to add statistics for any assessment (stored in separate statistics book)
+* *Major Enhancements*: Added the *Assessments/Grades Feature*
+   ** Able to add/list/delete assessments
+   ** Able to add/view/delete grades for students individually, for specific assessments
+   ** Able to add/list/delete statistics for any assessment (stored in separate statistics book)
 
           What It Does: Allows the user (either teachers/ admin) to maintain a list of all assessments in the school. Grades for these assessments can be added to students individually. Finally, the user can also add statistics for each assessment such as average score, max/min score etc. These statistics will be stored in a separate statistics book.
 
@@ -25,23 +32,23 @@ created with JavaFX. It is written in Java, and has about 10 kLoC.
 
           Highlights: This enhancement is multifaceted and requires addition of new commands as well as careful modification to existing ones. The implementation requires meticulousness to ensure that the code is well-integrated and runs smoothly without any bugs.
 
-2. *Minor Enhancement*: Added functions to allow statistics such as average grade for each assessment to be calculated automatically (Coming Soon in v1.4)
+* *Minor Enhancement*: Added functions to allow statistics such as average grade for each assessment to be calculated automatically, so manual work required by the user is reduced.
 
-3. *Other Contributions*:
-   * Project management
-   ** ROLE: Deliverable and deadlines in-charge - Managed Issue Tracker on GitHub, Set milestones for own features, deadlines for groups, labels and so on.
+* *Other Contributions*:
+   ** Project Management
+   *** ROLE: Deliverable and deadlines in-charge - Managed Issue Tracker on GitHub, Set milestones for own features, deadlines for groups, labels and so on.
 
-   * Documentation:
-   ** Tweaked contents of User Guide, Developer Guide to fit our project. Contributed to 'About Us' page.
+   ** Documentation:
+   *** Tweaked contents of User Guide and Developer Guide to fit our project. Contributed to 'About Us' page.
 
-   * Community:
-   ** PRs reviewed (with non-trivial review comments): https://github.com/CS2113-AY1819S1-F10-1/main/pull/159[#159],
+   ** Community:
+   *** PRs reviewed (with non-trivial review comments): https://github.com/CS2113-AY1819S1-F10-1/main/pull/159[#159],
    https://github.com/CS2113-AY1819S1-F10-1/main/pull/157[#157], https://github.com/CS2113-AY1819S1-F10-1/main/pull/86[#86],
    https://github.com/CS2113-AY1819S1-F10-1/main/pull/86[#168]
 
-   ** Reported bugs and suggestions for teammates: https://github.com/CS2113-AY1819S1-F10-1/main/issues/173[#173]
+   *** Reported bugs and suggestions for teammates: https://github.com/CS2113-AY1819S1-F10-1/main/issues/173[#173]
 
-   ** Reported bugs and suggestions for other teams in the class: https://github.com/CS2113-AY1819S1-W13-4/main/issues/125[#125],
+   *** Reported bugs and suggestions for other teams in the class: https://github.com/CS2113-AY1819S1-W13-4/main/issues/125[#125],
    https://github.com/CS2113-AY1819S1-W13-4/main/issues/89[#89], https://github.com/CS2113-AY1819S1-W13-4/main/issues/94[#94],
    https://github.com/CS2113-AY1819S1-W13-4/main/issues/108[#108]
 
@@ -59,4 +66,3 @@ include::../UserGuide.adoc[tag=Grades]
 |===
 
 include::../DeveloperGuide.adoc[tag=Grades]
-

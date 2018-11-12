@@ -75,6 +75,11 @@
             <value>0.00</value>
             <duedate>00-00-0000</duedate>
         </fees>
+        <account>
+            <username>fil_username</username>
+            <password>fil_password</password>
+            <privilege>Basic</privilege>
+        </account>
     </persons>
     <persons>
         <name>Gary</name>
@@ -116,7 +121,7 @@
         <address isPrivate="false">1377 Pennsylvania Avenue</address>
         <attendance/>
         <account>
-            <username>johnny</username>
+            <username>john_the_admin</username>
             <password>pw123</password>
             <privilege>Admin</privilege>
         </account>
@@ -146,6 +151,11 @@
             <value>0.00</value>
             <duedate>00-00-0000</duedate>
         </fees>
+        <account>
+            <username>lira_username</username>
+            <password>lira_password</password>
+            <privilege>Tutor</privilege>
+        </account>
     </persons>
     <persons>
         <name>Mufasa</name>
@@ -235,5 +245,97 @@
             <duedate>00-00-0000</duedate>
         </fees>
     </persons>
+    <assessments>
+        <examName>English Reading Comprehension</examName>
+        <personIndex>5</personIndex>
+        <personIndex>10</personIndex>
+        <personIndex>11</personIndex>
+        <personIndex>12</personIndex>
+        <grades>100.0</grades>
+        <grades>96.0</grades>
+        <grades>87.6</grades>
+        <grades>58.42</grades>
+    </assessments>
+    <assessments>
+        <examName>Mathematics final test</examName>
+        <personIndex>1</personIndex>
+        <personIndex>0</personIndex>
+        <personIndex>2</personIndex>
+        <personIndex>3</personIndex>
+        <grades>100.0</grades>
+        <grades>96.0</grades>
+        <grades>100.0</grades>
+        <grades>99.2</grades>
+    </assessments>
+    <assessments>
+        <examName>Physics Group Project</examName>
+        <personIndex>1</personIndex>
+        <personIndex>0</personIndex>
+        <grades>98.78</grades>
+        <grades>88.5</grades>
+    </assessments>
+    <assessments>
+        <examName>Chemistry exam</examName>
+        <personIndex>0</personIndex>
+        <grades>88.0</grades>
+    </assessments>
+    <assessments>
+        <examName>Biology midterm</examName>
+        <personIndex>2</personIndex>
+        <personIndex>3</personIndex>
+        <grades>86.0</grades>
+        <grades>55.67</grades>
+    </assessments>
+    <assessments>
+        <examName>SportScience Essay</examName>
+        <personIndex>9</personIndex>
+        <personIndex>6</personIndex>
+        <grades>89.99</grades>
+        <grades>85.0</grades>
+    </assessments>
+    <assessments>
+        <examName>Mandarin Speaking</examName>
+        <personIndex>1</personIndex>
+        <grades>92.0</grades>
+    </assessments>
+    <assessments>
+        <examName>Spanish</examName>
+    </assessments>
+    <assessments>
+        <examName>French</examName>
+        <personIndex>0</personIndex>
+        <personIndex>1</personIndex>
+        <grades>100.0</grades>
+        <grades>96.0</grades>
+    </assessments>
+    <assessments>
+        <examName>History presentation</examName>
+        <personIndex>1</personIndex>
+        <personIndex>0</personIndex>
+        <grades>93.45</grades>
+        <grades>90.5</grades>
+    </assessments>
+    <assessments>
+        <examName>Geography maps</examName>
+        <personIndex>0</personIndex>
+        <grades>82.0</grades>
+    </assessments>
+    <assessments>
+        <examName>Physical Education</examName>
+        <personIndex>1</personIndex>
+        <personIndex>0</personIndex>
+        <grades>78.0</grades>
+        <grades>91.67</grades>
+    </assessments>
+    <assessments>
+        <examName>Art</examName>
+        <personIndex>8</personIndex>
+        <grades>89.85</grades>
+    </assessments>
+    <assessments>
+        <examName>Drama</examName>
+        <personIndex>10</personIndex>
+        <grades>92.0</grades>
+    </assessments>
     <password>default_pw</password>
 </AddressBook>

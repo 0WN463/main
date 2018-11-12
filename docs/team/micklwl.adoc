@@ -28,7 +28,7 @@ I served as the project’s bug tester, to ensure that each feature added will b
 * *Main feature implemented*: added the *Exams feature*
 ** What it does: allows staff to create and manage exams held in the school, as well as registering students for them. 
 ** Justification: This feature improves the product significantly because exams would be present in every school and it would be valuable for the school tutors and admins to manage them in a single application. Students would be able to benefit as they can check their exam schedules without the need to ask others or record them separately.
-** Highlights: This enhancement affects existing commands, data structures and commands to be added in future. It required an in-depth analysis of design alternatives. The implementation too was challenging as it required changes to existing commands and data structures. This is because a single exam object is closely related to the whole AddressBook.
+** Highlights: This enhancement affects existing commands, data structures and commands to be added in future. It required an in-depth analysis of design alternatives. The implementation too was challenging as it required changes to existing commands and data structures. This is because a single exam object is closely related to the whole AddressBook. Hence, there are checks to ensure that the exams are always synchronised in both storage files.
 ** Credits: https://stackoverflow.com/a/30578421[Victor Hernandez] for the base valid date checker method.
 
 * *Other contributions*:
@@ -40,10 +40,12 @@ I served as the project’s bug tester, to ensure that each feature added will b
 ** Contributions to project documentation:
 *** Helped to port over and adapted AddressBook - Level 4 documents to ensure working links for website: https://github.com/CS2113-AY1819S1-F10-1/main/pull/156[#156], https://github.com/CS2113-AY1819S1-F10-1/main/pull/206[#206]
 *** Standardised format for documentation: https://github.com/CS2113-AY1819S1-F10-1/main/pull/184[#184]
+*** Helped to update the AboutUs page: https://github.com/CS2113-AY1819S1-F10-1/main/pull/185[#185]
 ** Evidence of helping others:
 *** PRs reviewed (with non-trivial review comments): https://github.com/CS2113-AY1819S1-F10-1/main/pull/68[#68]
-*** Manually tested all features in my team's application and reported any issues: https://github.com/CS2113-AY1819S1-F10-1/main/issues/161[#161], https://github.com/CS2113-AY1819S1-F10-1/main/issues/173[#173]
-*** Manually tested other teams' applications and reported any issues: https://github.com/CS2113-AY1819S1-T16-4/main/issues/192[#192], https://github.com/CS2113-AY1819S1-T16-4/main/issues/197[#197]  
+*** Helped to write tests for others and increase coverage: https://github.com/CS2113-AY1819S1-T16-4/main/pull/284[#284]
+*** Manually tested all features in my team's application and reported any issues: https://github.com/CS2113-AY1819S1-F10-1/main/issues/161[#161], https://github.com/CS2113-AY1819S1-F10-1/main/issues/173[#173], https://github.com/CS2113-AY1819S1-F10-1/main/issues/246[#246], https://github.com/CS2113-AY1819S1-F10-1/main/issues/269[#269]
+*** Manually tested other teams' applications and reported any issues: https://github.com/CS2113-AY1819S1-T16-4/main/issues/192[#192], https://github.com/CS2113-AY1819S1-T16-4/main/issues/197[#197], https://github.com/CS2113-AY1819S1-T16-4/main/issues/203[#203], https://github.com/CS2113-AY1819S1-T16-4/main/issues/211[#211]  
 
 == Contributions to the User Guide
 

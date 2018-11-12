@@ -11,20 +11,20 @@ image:https://api.codacy.com/project/badge/Grade/e1ed6200448148c6a6c8d955ee177c6
 image::Ui.png[width="600"]
 
 * This is a CLI (Command Line Interface) Database application *written in OOP fashion*. It has a very basic GUI.
-* The application manages and facilitates data entry and viewing for a secondary school.
+* The application manages and facilitates data entry and viewing for a secondary school database.
 * Students, tutors and admins can access information with increasing privileges respectively.
 
-*What's in Version 1.4*
 
 * A simple GUI added to replace the Text UI.
-* A `Logic` class added together with a `LogicTest` class.
 * Appendices added to <<DeveloperGuide#, Developer Guide>>
-* `5 Features` added from each <<AboutUs#, team member>> listed below
-** Allowing increasing privileges for users.
-** Viewing of student's overall attendance.
-** Adding of grades to students.
-** Keying and viewing of fees of students by administrators.
-** Ability to add and store new exam details.
+
+*`5 Key Features` implemented by each <<AboutUs#, team member>> listed below*
+
+* Account Authentication.
+* Attendance Tracking.
+* Grades Tracking.
+* Fees Tracking.
+* Exam Tracking.
 
 *Useful Links*
 

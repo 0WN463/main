@@ -1,14 +1,31 @@
 {
-	"ignoreGlobList": ["*.class", "addressbook.txt", "backup_data.txt", "exams.txt", "statistics.txt",
-						"*.jar", "*.war", "*.ear", ".idea/", "*.iml", "out/", "/bin/", "/data/", "publish.sh",
-						".gradle/", "build/"],
 	"formats": ["adoc", "cs", "css", "fxml", "gradle", "html", "java", "js", "json", "jsp", "md", "py", "tag", "xml"],
 	"authors":
 	[
 		{
+			"githubId": "lucdx",
+			"displayName": "LUC...HAO",
+			"authorNames": ["lucdx"]
+		},
+		{
+			"githubId": "Meg1456",
+			"displayName": "MEG...NAN",
+			"authorNames": ["Meg1456"]
+		},
+		{
+			"githubId": "micklwl",
+			"displayName": "MIC...LIN",
+			"authorNames": ["micklwl"]
+		},
+		{
 			"githubId": "meisbokai",
-			"displayName": "Neow Bo Kai",
+			"displayName": "NEO...KAI",
 			"authorNames": ["meisbokai", "Neow Bo Kai"]
-		}
+		}, 
+		{
+			"githubId": "0WN643",
+			"displayName": "NG ... IN",
+			"authorNames": ["0WN643"]
+		},
 	]
 }

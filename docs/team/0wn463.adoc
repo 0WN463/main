@@ -53,7 +53,7 @@ Available https://nuscs2113-ay1819s1.github.io/dashboard/#=undefined&search=0wn4
 . Enhancements to existing features:
 * Updated the GUI
 ** Added a status console to display status messages
-** Designed and added Koro-san image:Koro-san.png[32,32], our mascot which serves as our Java application icon.
+** Designed Koro-san image:Koro-san.png[32,32], our mascot which serves as our Java application icon.
 
 . Community:
 * PRs reviewed (with non-trivial review comments): 
@@ -72,13 +72,13 @@ https://github.com/CS2113-AY1819S1-F09-3/main/issues/254#event-1944677222[#254],
 https://github.com/CS2113-AY1819S1-F09-3/main/issues/256#issuecomment-435553781[#256],
 https://github.com/CS2113-AY1819S1-F09-3/main/issues/258#event-1944205020[#258],
 https://github.com/CS2113-AY1819S1-F09-3/main/issues/261#event-1944698406[#261], 
-https://github.com/CS2113-AY1819S1-F09-3/main/issues/265#event-1944678415[#265],
+https://github.com/CS2113-AY1819S1-F09-3/main/issues/265#event-1944678415[#265]
 
 . Documentation:
 * Did cosmetic tweaks
 ** Added table of content
 ** Made Appendices collapsible
-** Designed and added icons image:Basic.png[16,16] image:Tutor.png[16,16] image:Admin.png[16,16] for easier identification of privilege required for commands
+** Designed icons image:Basic.png[16,16] image:Tutor.png[16,16] image:Admin.png[16,16] for easier identification of privilege required for commands
 
 == Contributions to the User Guide
 

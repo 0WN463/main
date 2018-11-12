@@ -14,6 +14,8 @@ In this project, I serve mainly as a Code Quality checker. Aside from the code q
 
 == Summary of contributions
 
+* *Code Contributions*: https://nuscs2113-ay1819s1.github.io/dashboard/#=undefined&search=meisbokai[here]
+
 * *Major enhancement*: added a new field *Attendance* which comes with a few commands
 ** What it does: Enables the ClassRepO to keep track of the students' attendance.
 ** Justification: This feature improves the product significantly as a school already needs to take the students' attendance. A digitalized storage and management of the attendance will make data analysis faster and also reduces the usage of paper (eco-friendly).
@@ -28,7 +30,7 @@ In this project, I serve mainly as a Code Quality checker. Aside from the code q
 *** Continuously updated the feature introduced by me (attendance): https://github.com/CS2113-AY1819S1-F10-1/main/pull/214[#214] | https://github.com/CS2113-AY1819S1-F10-1/main/pull/209[#209] | https://github.com/CS2113-AY1819S1-F10-1/main/pull/2126[#126] | https://github.com/CS2113-AY1819S1-F10-1/main/pull/68[#68]
 *** Wrote additional tests for existing features to increase coverage: https://github.com/CS2113-AY1819S1-F10-1/main/pull/214[#214] | https://github.com/CS2113-AY1819S1-F10-1/main/pull/209[#209] | https://github.com/CS2113-AY1819S1-F10-1/main/pull/2126[#126] | https://github.com/CS2113-AY1819S1-F10-1/main/pull/68[#68]
 ** Documentation:
-*** Reviewed grammar and spelling for UG and DG: https://github.com/CS2113-AY1819S1-F10-1/main/pull/209[#209]
+*** Reviewed grammar and spelling for UG and DG: https://github.com/CS2113-AY1819S1-F10-1/main/pull/270[#270]| https://github.com/CS2113-AY1819S1-F10-1/main/pull/209[#209]
 ** Community:
 *** PRs reviewed (with non-trivial review comments): https://github.com/CS2113-AY1819S1-F10-1/main/pull/221[#221]
 

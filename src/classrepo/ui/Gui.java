@@ -1,0 +1,66 @@
+package classrepo.ui;
+
+import java.io.IOException;
+import java.io.InputStream;
+
+import classrepo.Main;
+import classrepo.logic.Logic;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.image.Image;
+import javafx.stage.Stage;
+
+/**
+ * The GUI of the App
+ */
+public class Gui {
+
+    /** Offset required to convert between 1-indexing and 0-indexing.  */
+    public static final int DISPLAYED_INDEX_OFFSET = 1;
+
+    private static final int INITIAL_WINDOW_WIDTH = 800;
+    private static final int INITIAL_WINDOW_HEIGHT = 600;
+    private final Logic logic;
+
+    private String version;
+
+    public Gui(Logic logic, String version) {
+        this.logic = logic;
+        this.version = version;
+    }
+    /** Create the startup the window **/
+    public void start(Stage stage, Stoppable mainApp) throws IOException {
+        MainWindow mainWindow;
+        mainWindow = createMainWindow(stage, mainApp);
+        mainWindow.displayWelcomeMessage(version, logic.getStorageFilePath(), logic.getStorageFilePathExam(),
+                logic.getStorageFilePathStatistics());
+    }
+
+    /** Create the GUI window **/
+    private MainWindow createMainWindow(Stage stage, Stoppable mainApp) throws IOException {
+        FXMLLoader loader = new FXMLLoader();
+
+        /* Note: When calling getResource(), use '/', instead of File.separator or '\\'
+         * More info: http://docs.oracle.com/javase/8/docs/technotes/guides/lang/resources.html#res_name_context
+         */
+        loader.setLocation(Main.class.getResource("ui/mainwindow.fxml"));
+
+        stage.setTitle(version);
+        stage.setScene(new Scene(loader.load(), INITIAL_WINDOW_WIDTH, INITIAL_WINDOW_HEIGHT));
+
+        setUpIcon(stage);
+
+        stage.show();
+        MainWindow mainWindow = loader.getController();
+        mainWindow.setLogic(logic);
+        mainWindow.setMainApp(mainApp);
+        return mainWindow;
+    }
+
+    /** Create the application icon **/
+    private void setUpIcon(Stage stage) {
+        final InputStream input = getClass().getResourceAsStream("images/Icon.png");
+        final Image image = new Image(input);
+        stage.getIcons().add(image);
+    }
+}

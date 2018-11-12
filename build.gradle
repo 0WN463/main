@@ -14,7 +14,7 @@ plugins {
     id 'application'
 }
 
-mainClassName = 'seedu.addressbook.Main'
+mainClassName = 'classrepo.Main'
 
 sourceCompatibility = JavaVersion.VERSION_1_9
 targetCompatibility = JavaVersion.VERSION_1_9
@@ -84,7 +84,7 @@ dependencies {
 }
 
 shadowJar {
-    archiveName = 'addressbook.jar'
+    archiveName = 'ClassRepo.jar'
 
     destinationDir = file("${buildDir}/jar/")
 }
@@ -150,7 +150,7 @@ asciidoctor {
         idprefix: '',  // for compatibility with GitHub preview
         idseparator: '-',
         'site-root': "${sourceDir}",  // must be the same as sourceDir, do not modify
-        'site-name': 'ClassRep0',
+        'site-name': 'ClassRepo',
         'site-githuburl': 'https://github.com/CS2113-AY1819S1-F10-1/main',
     ]
 

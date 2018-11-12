@@ -1,11 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <StatisticsBook>
     <statisticsList>
-        <examName>Math Midterm</examName>
-        <averageScore>50.0</averageScore>
+        <examName>Mathematics final</examName>
+        <averageScore>98.8</averageScore>
+        <totalExamTakers>4</totalExamTakers>
+        <maxScore>100.0</maxScore>
+        <minScore>96.0</minScore>
+    </statisticsList>
+    <statisticsList>
+         <examName>Physics Group Project</examName>
+         <averageScore>93.64</averageScore>
+         <totalExamTakers>2</totalExamTakers>
+         <maxScore>98.78</maxScore>
+         <minScore>88.5</minScore>
+    </statisticsList>
+    <statisticsList>
+        <examName>Mandarin Speaking</examName>
+        <averageScore>92.0</averageScore>
         <totalExamTakers>1</totalExamTakers>
-        <maxScore>50.0</maxScore>
-        <minScore>50.0</minScore>
+        <maxScore>92.0</maxScore>
+        <minScore>92.0</minScore>
+    </statisticsList>
+    <statisticsList>
+        <examName>History presentation</examName>
+        <averageScore>91.98</averageScore>
+        <totalExamTakers>2</totalExamTakers>
+        <maxScore>93.45</maxScore>
+        <minScore>90.5</minScore>
+    </statisticsList>
+    <statisticsList>
+        <examName>Geography maps</examName>
+        <averageScore>82.0</averageScore>
+        <totalExamTakers>1</totalExamTakers>
+        <maxScore>82.0</maxScore>
+        <minScore>82.0</minScore>
     </statisticsList>
 </StatisticsBook>
 

@@ -1,12 +1,183 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ExamBook>
+    <examsList isPrivate="true">
+        <subjectName>Biology</subjectName>
+        <examName>Biology Paper 1</examName>
+        <examDate>02-06-2018</examDate>
+        <examStartTime>11:00</examStartTime>
+        <examEndTime>16:00</examEndTime>
+        <examDetails>Seconday 2</examDetails>
+        <takers>0</takers>
+    </examsList>
+    <examsList isPrivate="true">
+        <subjectName>biology</subjectName>
+        <examName>Biology Paper 3</examName>
+        <examDate>07-06-2018</examDate>
+        <examStartTime>11:00</examStartTime>
+        <examEndTime>16:00</examEndTime>
+        <examDetails>Seconday 3</examDetails>
+        <takers>0</takers>
+    </examsList>
+    <examsList isPrivate="true">
+        <subjectName>biology</subjectName>
+        <examName>Biology Paper 1</examName>
+        <examDate>02-06-2018</examDate>
+        <examStartTime>11:00</examStartTime>
+        <examEndTime>16:00</examEndTime>
+        <examDetails>Seconday 3</examDetails>
+        <takers>0</takers>
+    </examsList>
+    <examsList isPrivate="true">
+        <subjectName>biology</subjectName>
+        <examName>Biology Paper 2</examName>
+        <examDate>04-06-2018</examDate>
+        <examStartTime>11:00</examStartTime>
+        <examEndTime>16:00</examEndTime>
+        <examDetails>Seconday 2</examDetails>
+        <takers>0</takers>
+    </examsList>
+    <examsList isPrivate="true">
+        <subjectName>chicken</subjectName>
+        <examName>biology</examName>
+        <examDate>06-06-2018</examDate>
+        <examStartTime>11:00</examStartTime>
+        <examEndTime>16:00</examEndTime>
+        <examDetails>Seconday 2</examDetails>
+        <takers>0</takers>
+    </examsList>
+    <examsList isPrivate="false">
+        <subjectName>Chinese</subjectName>
+        <examName>Chinese oral</examName>
+        <examDate>01-05-2018</examDate>
+        <examStartTime>14:00</examStartTime>
+        <examEndTime>16:00</examEndTime>
+        <examDetails>for secondary 4</examDetails>
+        <takers>0</takers>
+    </examsList>
+    <examsList isPrivate="true">
+        <subjectName>Chinese</subjectName>
+        <examName>Chinese oral</examName>
+        <examDate>01-12-2018</examDate>
+        <examStartTime>14:00</examStartTime>
+        <examEndTime>16:00</examEndTime>
+        <examDetails>for secondary 3</examDetails>
+        <takers>0</takers>
+    </examsList>
+    <examsList isPrivate="false">
+        <subjectName>Computing</subjectName>
+        <examName>Computing MCQ</examName>
+        <examDate>08-08-2018</examDate>
+        <examStartTime>08:00</examStartTime>
+        <examEndTime>09:00</examEndTime>
+        <examDetails>Bring your pencils</examDetails>
+        <takers>0</takers>
+    </examsList>
+    <examsList isPrivate="false">
+        <subjectName>Computing</subjectName>
+        <examName>Practical Exam</examName>
+        <examDate>08-09-2018</examDate>
+        <examStartTime>14:00</examStartTime>
+        <examEndTime>16:00</examEndTime>
+        <examDetails>At comp labs 2, open book</examDetails>
+        <takers>0</takers>
+    </examsList>
+    <examsList isPrivate="true">
+        <subjectName>Computing</subjectName>
+        <examName>Practical Exam Finals</examName>
+        <examDate>08-11-2018</examDate>
+        <examStartTime>14:00</examStartTime>
+        <examEndTime>16:00</examEndTime>
+        <examDetails>At comp labs 2, open book</examDetails>
+        <takers>0</takers>
+    </examsList>
+    <examsList isPrivate="false">
+        <subjectName>English</subjectName>
+        <examName>English Finals Paper 2</examName>
+        <examDate>04-06-2018</examDate>
+        <examStartTime>14:00</examStartTime>
+        <examEndTime>16:00</examEndTime>
+        <examDetails>At MPSH 6</examDetails>
+        <takers>0</takers>
+    </examsList>
+    <examsList isPrivate="false">
+        <subjectName>English</subjectName>
+        <examName>listening comprehension</examName>
+        <examDate>01-05-2018</examDate>
+        <examStartTime>10:00</examStartTime>
+        <examEndTime>11:00</examEndTime>
+        <examDetails>no phones allowed</examDetails>
+        <takers>0</takers>
+    </examsList>
+    <examsList isPrivate="true">
+        <subjectName>english</subjectName>
+        <examName>English Finals Paper 1</examName>
+        <examDate>03-06-2018</examDate>
+        <examStartTime>14:00</examStartTime>
+        <examEndTime>16:00</examEndTime>
+        <examDetails>nil</examDetails>
+        <takers>0</takers>
+    </examsList>
+    <examsList isPrivate="false">
+        <subjectName>Math</subjectName>
+        <examName>Math Midterms for Sec 3</examName>
+        <examDate>02-09-2018</examDate>
+        <examStartTime>11:00</examStartTime>
+        <examEndTime>16:00</examEndTime>
+        <examDetails>MPSH1</examDetails>
+        <takers>0</takers>
+    </examsList>
     <examsList isPrivate="false">
         <subjectName>Mathematics</subjectName>
         <examName>Math Mid-Terms 2018S1</examName>
-        <examDate>01-12-2018</examDate>
+        <examDate>05-06-2018</examDate>
         <examStartTime>09:00</examStartTime>
         <examEndTime>12:00</examEndTime>
         <examDetails>At MPSH</examDetails>
+        <takers>0</takers>
+    </examsList>
+    <examsList isPrivate="false">
+        <subjectName>Mathematics</subjectName>
+        <examName>Math Finals 2019S2</examName>
+        <examDate>01-12-2018</examDate>
+        <examStartTime>10:00</examStartTime>
+        <examEndTime>12:00</examEndTime>
+        <examDetails>At MPSH</examDetails>
+        <takers>0</takers>
+    </examsList>
+    <examsList isPrivate="false">
+        <subjectName>Mathematics</subjectName>
+        <examName>Math Finals 2019S2 Paper 2</examName>
+        <examDate>04-12-2018</examDate>
+        <examStartTime>09:00</examStartTime>
+        <examEndTime>12:00</examEndTime>
+        <examDetails>At MPSH</examDetails>
+        <takers>0</takers>
+    </examsList>
+    <examsList isPrivate="true">
+        <subjectName>Mathematics</subjectName>
+        <examName>Math Quiz</examName>
+        <examDate>21-03-2019</examDate>
+        <examStartTime>09:00</examStartTime>
+        <examEndTime>12:00</examEndTime>
+        <examDetails>To be confirmed</examDetails>
+        <takers>0</takers>
+    </examsList>
+    <examsList isPrivate="false">
+        <subjectName>Physics</subjectName>
+        <examName>Physics Paper 1</examName>
+        <examDate>09-06-2018</examDate>
+        <examStartTime>12:00</examStartTime>
+        <examEndTime>15:00</examEndTime>
+        <examDetails>At MPSH4</examDetails>
+        <takers>0</takers>
+    </examsList>
+    <examsList isPrivate="false">
+        <subjectName>Physics</subjectName>
+        <examName>Physics Paper 2</examName>
+        <examDate>11-06-2018</examDate>
+        <examStartTime>13:00</examStartTime>
+        <examEndTime>15:00</examEndTime>
+        <examDetails>At MPSH4</examDetails>
         <takers>0</takers>
     </examsList>
 </ExamBook>
