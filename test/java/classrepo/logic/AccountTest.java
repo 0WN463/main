@@ -5,7 +5,6 @@ import static classrepo.common.Messages.MESSAGE_INVALID_COMMAND_FORMAT;
 import static classrepo.common.Messages.MESSAGE_NOT_LOGGED_IN;
 import static classrepo.common.Messages.MESSAGE_PERSON_NOT_IN_ADDRESSBOOK;
 import static classrepo.common.Messages.MESSAGE_WRONG_NUMBER_ARGUMENTS;
-import static classrepo.logic.CommandAssertions.*;
 import static classrepo.logic.CommandAssertions.assertCommandBehavior;
 import static classrepo.privilege.Privilege.PRIVILEGE_CONSTRAINTS;
 import static junit.framework.TestCase.assertEquals;

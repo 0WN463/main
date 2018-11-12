@@ -3,7 +3,6 @@ package classrepo.logic;
 import static classrepo.common.Messages.MESSAGE_DATE_CONSTRAINTS;
 import static classrepo.common.Messages.MESSAGE_INVALID_COMMAND_FORMAT;
 import static classrepo.common.Messages.MESSAGE_INVALID_PERSON_DISPLAYED_INDEX;
-import static classrepo.logic.CommandAssertions.*;
 import static classrepo.logic.CommandAssertions.assertCommandBehavior;
 import static junit.framework.TestCase.assertEquals;
 

@@ -5,7 +5,6 @@ import static classrepo.common.Messages.MESSAGE_FEES_VALUE_CONSTRAINTS;
 import static classrepo.common.Messages.MESSAGE_INVALID_COMMAND_FORMAT;
 import static classrepo.common.Messages.MESSAGE_INVALID_PERSON_DISPLAYED_INDEX;
 import static classrepo.common.Messages.MESSAGE_PERSON_NOT_IN_ADDRESSBOOK;
-import static classrepo.logic.CommandAssertions.*;
 import static classrepo.logic.CommandAssertions.assertCommandBehavior;
 
 import java.util.ArrayList;
