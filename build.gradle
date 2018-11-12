@@ -14,7 +14,7 @@ plugins {
     id 'application'
 }
 
-mainClassName = 'seedu.addressbook.Main'
+mainClassName = 'classrepo.Main'
 
 sourceCompatibility = JavaVersion.VERSION_1_9
 targetCompatibility = JavaVersion.VERSION_1_9
@@ -84,7 +84,7 @@ dependencies {
 }
 
 shadowJar {
-    archiveName = 'addressbook.jar'
+    archiveName = 'ClassRepo.jar'
 
     destinationDir = file("${buildDir}/jar/")
 }

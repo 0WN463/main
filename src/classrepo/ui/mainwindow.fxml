@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<VBox stylesheets="@/classrepo/ui/DarkTheme.css" alignment="center" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="classrepo.ui.MainWindow">
+
+    <children>
+
+        <TextField fx:id="commandInput" onAction="#onCommand" VBox.vgrow="NEVER">
+        </TextField>
+
+        <TextArea fx:id="asciiArt" editable="false" VBox.vgrow="NEVER" prefHeight="160">
+        </TextArea>
+
+        <TextArea fx:id="outputConsole" editable="false" wrapText="true" VBox.vgrow="ALWAYS">
+        </TextArea>
+
+        <TextArea fx:id="statusConsole" editable="false" wrapText="true" VBox.vgrow="NEVER" prefHeight="150">
+        </TextArea>
+    </children>
+
+</VBox>
