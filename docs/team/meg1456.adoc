@@ -24,7 +24,7 @@ our app using a CLI. The application also has a GUI created with JavaFX. It is w
 * *Major Enhancements*: Added the *Assessments/Grades Feature*
    ** Able to add/list/delete assessments
    ** Able to add/view/delete grades for students individually, for specific assessments
-   ** Able to add statistics for any assessment (stored in separate statistics book)
+   ** Able to add/list/delete statistics for any assessment (stored in separate statistics book)
 
           What It Does: Allows the user (either teachers/ admin) to maintain a list of all assessments in the school. Grades for these assessments can be added to students individually. Finally, the user can also add statistics for each assessment such as average score, max/min score etc. These statistics will be stored in a separate statistics book.
 

@@ -1383,6 +1383,7 @@ Use case ends. +
 ** 3a1. ClassRepo shows an error message. +
 Use case ends.
 
+[discrete]
 === Use case: Taking attendance for student
 [discrete]
 ==== Actor: Tutor

@@ -49,11 +49,6 @@ public class ViewFeesCommand extends IndexFormatCommand {
     }
 
     @Override
-    public boolean isMutating() {
-        return true;
-    }
-
-    @Override
     public Category getCategory() {
         return Category.FEES;
     }
