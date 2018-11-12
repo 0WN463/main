@@ -108,8 +108,8 @@ Sets/Unsets the privilege to be Admin when starting a new session. +
 Format: `perm BOOLEAN`
 
 ****
-Enter `BOOLEAN` as `true` to set the default privilege to be Admin. +
-Enter `BOOLEAN` as `false` to set the default privilege to be Basic.
+Enter `BOOLEAN` as `true` to set the default privilege to Admin. +
+Enter `BOOLEAN` as `false` to set the default privilege to Basic.
 ****
 
 [NOTE]
