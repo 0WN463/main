@@ -4,6 +4,7 @@ import static classrepo.common.Messages.MESSAGE_DATE_CONSTRAINTS;
 import static classrepo.common.Messages.MESSAGE_INVALID_COMMAND_FORMAT;
 import static classrepo.common.Messages.MESSAGE_INVALID_PERSON_DISPLAYED_INDEX;
 import static classrepo.logic.CommandAssertions.assertCommandBehavior;
+import static classrepo.logic.CommandAssertions.setData;
 import static junit.framework.TestCase.assertEquals;
 
 import java.text.SimpleDateFormat;

@@ -6,6 +6,8 @@ import static classrepo.common.Messages.MESSAGE_INVALID_COMMAND_FORMAT;
 import static classrepo.common.Messages.MESSAGE_INVALID_PERSON_DISPLAYED_INDEX;
 import static classrepo.common.Messages.MESSAGE_PERSON_NOT_IN_ADDRESSBOOK;
 import static classrepo.logic.CommandAssertions.assertCommandBehavior;
+import static classrepo.logic.CommandAssertions.assertInvalidIndexBehaviorForCommand;
+import static classrepo.logic.CommandAssertions.setData;
 
 import java.util.ArrayList;
 import java.util.HashSet;

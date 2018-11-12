@@ -4,6 +4,8 @@ import static classrepo.common.Messages.MESSAGE_INSUFFICIENT_PRIVILEGE;
 import static classrepo.common.Messages.MESSAGE_INVALID_COMMAND_FORMAT;
 import static classrepo.common.Messages.MESSAGE_WRONG_NUMBER_ARGUMENTS;
 import static classrepo.logic.CommandAssertions.assertCommandBehavior;
+import static classrepo.logic.CommandAssertions.setData;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
