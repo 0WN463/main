@@ -5,6 +5,7 @@ import static classrepo.common.Messages.MESSAGE_INVALID_COMMAND_FORMAT;
 import static classrepo.common.Messages.MESSAGE_NOT_LOGGED_IN;
 import static classrepo.common.Messages.MESSAGE_PERSON_NOT_IN_ADDRESSBOOK;
 import static classrepo.common.Messages.MESSAGE_WRONG_NUMBER_ARGUMENTS;
+import static classrepo.logic.CommandAssertions.*;
 import static classrepo.logic.CommandAssertions.assertCommandBehavior;
 import static classrepo.privilege.Privilege.PRIVILEGE_CONSTRAINTS;
 import static junit.framework.TestCase.assertEquals;
@@ -60,7 +61,7 @@ public class AccountTest {
 
         privilege = new Privilege(new AdminUser());
         logic = new Logic(stubFile, addressBook, examBook, statisticsBook, privilege);
-        CommandAssertions.setData(stubFile, addressBook, logic);
+        setData(stubFile, addressBook, logic);
     }
 
     private void setUpThreePerson(AddressBook addressBook,
@@ -75,7 +76,7 @@ public class AccountTest {
 
     @Test
     public void executeAddAccount_invalidArgument_invalidMessageShown() throws Exception {
-        CommandAssertions.assertCommandBehavior("addacc",
+        assertCommandBehavior("addacc",
                 String.format(MESSAGE_INVALID_COMMAND_FORMAT, AddAccountCommand.MESSAGE_USAGE));
     }
 
@@ -87,14 +88,14 @@ public class AccountTest {
             "addacc 2 username password",
             "addacc 2 username password TUTOR TrailingArgument"};
         for (String input : inputs) {
-            CommandAssertions.assertCommandBehavior(input,
+            assertCommandBehavior(input,
                     String.format(MESSAGE_INVALID_COMMAND_FORMAT, AddAccountCommand.MESSAGE_USAGE));
         }
     }
 
     @Test
     public void executeAddAccount_invalidIndex_invalidIndexMessageShown() throws Exception {
-        CommandAssertions.assertInvalidIndexBehaviorForCommand("addacc", "", "username password BASIC");
+        assertInvalidIndexBehaviorForCommand("addacc", "", "username password BASIC");
     }
 
     @Test
@@ -235,13 +236,13 @@ public class AccountTest {
     @Test
     public void executeDeleteAccount_invalidArgsFormat_invalidMessageShown() throws Exception {
         String expectedMessage = String.format(MESSAGE_INVALID_COMMAND_FORMAT, DeleteAccountCommand.MESSAGE_USAGE);
-        CommandAssertions.assertCommandBehavior("deleteacc ", expectedMessage);
-        CommandAssertions.assertCommandBehavior("deleteacc arg not number", expectedMessage);
+        assertCommandBehavior("deleteacc ", expectedMessage);
+        assertCommandBehavior("deleteacc arg not number", expectedMessage);
     }
 
     @Test
     public void executeDeleteAccount_invalidIndex_invalidIndexMessageShown() throws Exception {
-        CommandAssertions.assertInvalidIndexBehaviorForCommand("deleteacc");
+        assertInvalidIndexBehaviorForCommand("deleteacc");
     }
 
     @Test
@@ -380,7 +381,7 @@ public class AccountTest {
         expectedAddressbook.addPerson(expectedP1);
         final PrivilegeLevel initialPrivilege = privilege.getUser().getPrivilegeLevel();
 
-        CommandAssertions.assertCommandBehavior("login",
+        assertCommandBehavior("login",
                 String.format(MESSAGE_INVALID_COMMAND_FORMAT, LoginCommand.MESSAGE_USAGE),
                 expectedAddressbook,
                 false,
@@ -407,7 +408,7 @@ public class AccountTest {
         final int requiredArguments = 2;
         int actualArguments = 1;
 
-        CommandAssertions.assertCommandBehavior("login username",
+        assertCommandBehavior("login username",
                 String.format(expectedMessage, requiredArguments, actualArguments, LoginCommand.MESSAGE_USAGE),
                 expectedAddressBook,
                 false,
@@ -415,7 +416,7 @@ public class AccountTest {
                 false);
 
         actualArguments = 1;
-        CommandAssertions.assertCommandBehavior("login password",
+        assertCommandBehavior("login password",
                 String.format(expectedMessage, requiredArguments, actualArguments, LoginCommand.MESSAGE_USAGE),
                 expectedAddressBook,
                 false,
@@ -423,7 +424,7 @@ public class AccountTest {
                 false);
 
         actualArguments = 3;
-        CommandAssertions.assertCommandBehavior("login username password extra_argument",
+        assertCommandBehavior("login username password extra_argument",
                 String.format(expectedMessage, requiredArguments, actualArguments, LoginCommand.MESSAGE_USAGE),
                 expectedAddressBook,
                 false,
@@ -539,12 +540,12 @@ public class AccountTest {
     @Test
     public void executeLogout_notLoggedIn_notLoggedInMessageShown() throws Exception {
         privilege.resetPrivilege();
-        CommandAssertions.assertCommandBehavior("logout", MESSAGE_NOT_LOGGED_IN);
+        assertCommandBehavior("logout", MESSAGE_NOT_LOGGED_IN);
     }
 
     @Test
     public void executeLogout_validInput_success() throws Exception {
-        CommandAssertions.assertCommandBehavior("logout", LogoutCommand.MESSAGE_SUCCESS);
+        assertCommandBehavior("logout", LogoutCommand.MESSAGE_SUCCESS);
         assertTrue(privilege.isBase());
     }
 

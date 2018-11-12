@@ -5,6 +5,7 @@ import static classrepo.common.Messages.MESSAGE_FEES_VALUE_CONSTRAINTS;
 import static classrepo.common.Messages.MESSAGE_INVALID_COMMAND_FORMAT;
 import static classrepo.common.Messages.MESSAGE_INVALID_PERSON_DISPLAYED_INDEX;
 import static classrepo.common.Messages.MESSAGE_PERSON_NOT_IN_ADDRESSBOOK;
+import static classrepo.logic.CommandAssertions.*;
 import static classrepo.logic.CommandAssertions.assertCommandBehavior;
 
 import java.util.ArrayList;
@@ -60,12 +61,12 @@ public class FeesCommandsTest {
                 saveFolder.newFile("testStubExamFile.txt").getPath(),
                 saveFolder.newFile("testStubStatisticsFile.txt").getPath());
         logic = new Logic(stubFile, addressBook, examBook, statisticBook, privilege);
-        CommandAssertions.setData(stubFile, addressBook, logic);
+        setData(stubFile, addressBook, logic);
     }
 
     @Test
     public void executeEditFees_invalidData_invalidMessage() throws Exception {
-        CommandAssertions.assertCommandBehavior("editfees 2 1.111 01-01-2018", Fees.MESSAGE_FEES_CONSTRAINTS);
+        assertCommandBehavior("editfees 2 1.111 01-01-2018", Fees.MESSAGE_FEES_CONSTRAINTS);
     }
 
     @Test
@@ -143,7 +144,7 @@ public class FeesCommandsTest {
 
     @Test
     public void executeEditFees_invalidIndex_invalidMessage() throws Exception {
-        CommandAssertions.assertCommandBehavior("editfees 0 12.12 01-01-2018",
+        assertCommandBehavior("editfees 0 12.12 01-01-2018",
                 MESSAGE_INVALID_PERSON_DISPLAYED_INDEX);
     }
 
@@ -370,7 +371,7 @@ public class FeesCommandsTest {
 
     @Test
     public void executePaidFees_invalidIndex_invalidMessage() throws Exception {
-        CommandAssertions.assertCommandBehavior("paidfees 0",
+        assertCommandBehavior("paidfees 0",
                 MESSAGE_INVALID_PERSON_DISPLAYED_INDEX);
     }
 
@@ -399,7 +400,7 @@ public class FeesCommandsTest {
 
     @Test
     public void executeViewFees_invalidIndex_invalidMessage() throws Exception {
-        CommandAssertions.assertInvalidIndexBehaviorForCommand("viewfees");
+        assertInvalidIndexBehaviorForCommand("viewfees");
     }
 
     @Test
@@ -421,7 +422,7 @@ public class FeesCommandsTest {
     @Test
     public void executeViewFees_invalidArgsFormat_invalidMessage() throws Exception {
         String expectedMessage = String.format(MESSAGE_INVALID_COMMAND_FORMAT, ViewFeesCommand.MESSAGE_USAGE);
-        CommandAssertions.assertCommandBehavior("viewfees ", expectedMessage);
-        CommandAssertions.assertCommandBehavior("viewfees arg not number", expectedMessage);
+        assertCommandBehavior("viewfees ", expectedMessage);
+        assertCommandBehavior("viewfees arg not number", expectedMessage);
     }
 }

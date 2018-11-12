@@ -3,6 +3,7 @@ package classrepo.logic;
 import static classrepo.common.Messages.MESSAGE_DATE_CONSTRAINTS;
 import static classrepo.common.Messages.MESSAGE_INVALID_COMMAND_FORMAT;
 import static classrepo.common.Messages.MESSAGE_INVALID_PERSON_DISPLAYED_INDEX;
+import static classrepo.logic.CommandAssertions.*;
 import static classrepo.logic.CommandAssertions.assertCommandBehavior;
 import static junit.framework.TestCase.assertEquals;
 
@@ -55,7 +56,7 @@ public class AttendanceTest {
                 saveFolder.newFile("testStubExamFile.txt").getPath(),
                 saveFolder.newFile("testStubStatisticsFile.txt").getPath());
         logic = new Logic(stubFile, addressBook, examBook, statisticBook, privilege);
-        CommandAssertions.setData(stubFile, addressBook, logic);
+        setData(stubFile, addressBook, logic);
     }
 
     /** This file contains the following test:
@@ -96,8 +97,8 @@ public class AttendanceTest {
     @Test
     public void executeUpdateAttendance_invalidArgsFormat_invalidCommandFormatMessage() throws Exception {
         String expectedMessage = String.format(MESSAGE_INVALID_COMMAND_FORMAT, UpdateAttendanceCommand.MESSAGE_USAGE);
-        CommandAssertions.assertCommandBehavior("attendance 1 d/29-09-1996 att/ ", expectedMessage);
-        CommandAssertions.assertCommandBehavior("attendance 2", expectedMessage);
+        assertCommandBehavior("attendance 1 d/29-09-1996 att/ ", expectedMessage);
+        assertCommandBehavior("attendance 2", expectedMessage);
     }
 
     @Test
@@ -240,7 +241,7 @@ public class AttendanceTest {
     public void executeViewAttendance_personInvalidArgsFormat_invalidCommandMessage() throws Exception {
         String expectedMessage = String.format(MESSAGE_INVALID_COMMAND_FORMAT,
                 ViewAttendancePersonCommand.MESSAGE_USAGE);
-        CommandAssertions.assertCommandBehavior("viewAttenPerson ", expectedMessage);
+        assertCommandBehavior("viewAttenPerson ", expectedMessage);
     }
 
     @Test
@@ -313,7 +314,7 @@ public class AttendanceTest {
     @Test
     public void executeReplaceAttendance_invalidArgsFormat_invalidCommandMessage() throws Exception {
         String expectedMessage = String.format(MESSAGE_INVALID_COMMAND_FORMAT, ReplaceAttendanceCommand.MESSAGE_USAGE);
-        CommandAssertions.assertCommandBehavior("replaceAtten 1 d/29-09-1996 att/ ", expectedMessage
+        assertCommandBehavior("replaceAtten 1 d/29-09-1996 att/ ", expectedMessage
         );
     }
 
@@ -449,8 +450,8 @@ public class AttendanceTest {
     @Test
     public void executeViewAttendanceDate_dateInvalidArgsFormat_invalidCommandMessage() throws Exception {
         String expectedMessage = String.format(MESSAGE_INVALID_COMMAND_FORMAT, ViewAttendanceDateCommand.MESSAGE_USAGE);
-        CommandAssertions.assertCommandBehavior("viewAttenDate ", expectedMessage);
-        CommandAssertions.assertCommandBehavior("viewAttenDate d/", expectedMessage);
+        assertCommandBehavior("viewAttenDate ", expectedMessage);
+        assertCommandBehavior("viewAttenDate d/", expectedMessage);
     }
 
     @Test
